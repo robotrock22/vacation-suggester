@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8"/>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
@@ -10,93 +11,64 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <p>Hello Traveler! Together we will be figuring out an ideal vacation destination based on some feedback you provide below. Are you ready to figure out where your next adventure may lead to?</p>
+        <h1>Hello Traveler!</h1>
+        <p>Together we will be figuring out an ideal vacation destination based on some feedback you provide below. Are you ready to figure out where your next adventure may lead to?</p>
       </div>
       <form id="inputs">
         <div class="form-group blank">
-          <label for="q1">First let's find out how many people will be in your party.</label>
-            <ul class="list-unstyled">
-              <li>
-                <input type="radio" name="partysize" value="1">
-                1
-              </li>
-              <li>
-                <input type="radio" name="partysize" value="2">
-                2
-              </li>
-              <li>
-                <input type="radio" name="partysize" value="3">
-                3
-              </li>
-              <li>
-                <input type="radio" name="partysize" value="4">
-                4
-              </li>
-              <li>
-                <input type="radio" name="partysize" value="5">
-                5+
-              </li>
-            </ul>
+          <label for="name">First tell us your name so this code will feel more personable.</label>
+          <input class="form-control" id="name" type="text" placeholder="Enter name here">
         </div>
         <div class="form-group blank">
-          <label for="q2">How long would you like to travel for?</label>
-            <ul type="A">
-              <li>
-                <input type="radio" name="traveltime" value="1">
-                2-6 Days
-              </li>
-              <li>
-                <input type="radio" name="traveltime" value="2">
-                1 Week
-              </li>
-              <li>
-                <input type="radio" name="traveltime" value="3">
-                2 Weeks
-              </li>
-              <li>
-                <input type="radio" name="traveltime" value="4">
-                3+ Weeks
-              </li>
-            </ul>
+          <label for="partysize">How many people will be in your party.</label>
+          <input class="form-control" id="partysize" type="text" placeholder="Enter answer here">
         </div>
         <div class="form-group blank">
-          <label for="q3">What kind of climate do you find most enjoyable?</label>
+          <label for="traveltime">How many days would you like to travel for?</label>
+          <input class="form-control" id="traveltime" type="text"  placeholder="Enter answer here">
+        </div>
+        <div class="form-group blank">
+          <label for="budget">What is your budget for this trip?</label>
+          <input class="form-control" id="budget" type="text"  placeholder="$">
+        </div>
+        <div class="form-group blank">
+          <label for="q4">What kind of climate do you find most enjoyable?</label>
             <ul type="A">
               <li>
-                <input type="radio" name="climate" value="1">
+                <input type="radio" name="climate">
                 Temperate: Temperate climates have warm summers and cool winters with year-round rain or snow. Temperate forests are characterized by deciduous trees, which lose their leaves during the winter.
               </li>
               <li>
-                <input type="radio" name="climate" value="2">
+                <input type="radio" name="climate">
                 Mountain: On mountains, the temperature decreases with altitude (height), and many high peaks are always covered in snow. Mountain climates are usually wetter and windier than lowland regions.
               </li>
               <li>
-                <input type="radio" name="climate" value="3">
+                <input type="radio" name="climate">
                 Polar: Polar climates are cold and dry, with long, dark winters. In the tundra (a treeless region bordering the Arctic), temperatures rise above freezing for only a few months each year.
               </li>
               <li>
-                <input type="radio" name="climate" value="4">
+                <input type="radio" name="climate">
                 Tropical: Tropical areas, such as the African savanna, lie between desert areas and tropical rainforests. The climate is hot all year, but with a distinct wet season and dry season.
               </li>
               <li>
-                <input type="radio" name="climate" value="5">
+                <input type="radio" name="climate">
                 Desert: Earth's deserts are hot and dry year-round, and usually receive less than 10 in (250 mm) of rainfall a year. Deserts are often found in the center of continents, far from the sea.
               </li>
             </ul>
         </div>
         <div class="form-group blank">
-          <label for="q4">What type of housing are you looking for?</label>
+          <label for="q5">What type of housing are you looking for?</label>
             <ul type="A">
               <li>
-                <input type="radio" name="housing" value="1">
+                <input type="radio" name="housing">
                 Minimal: You don't plan on being in your room much.
               </li>
               <li>
-                <input type="radio" name="housing" value="2">
+                <input type="radio" name="housing">
                 Comfortable: You enjoy spending time in a room with modern amenities when traveling.
               </li>
               <li>
-                <input type="radio" name="housing" value="3">
+                <input type="radio" name="housing">
                 Luxury: Privacy is important to you and you will be spending a large portion of your vacation relaxing in your room.
               </li>
             </ul>
@@ -115,11 +87,14 @@
             </select>
         </div>
         <div class="form-group blank">
-          <label for="q5">What type of night time activity sounds most appealing?</label>
-          <input type="text" class="form-control" id="q1" placeholder="Enter answer here">
+          <label for="q7">What type of night time activity sounds most appealing?</label>
+          <input type="text" class="form-control" placeholder="Enter answer here">
         </div>
         <button type="submit" class="btn btn-success">Go Travel!</button>
       </form>
+      <div id="output">
+
+      </div>
     </div>
   </body>
 </html>
