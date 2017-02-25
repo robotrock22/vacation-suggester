@@ -11,9 +11,9 @@ $(document).ready(function() {
     if (isNaN(partysize) || isNaN(traveltime) || isNaN(budget)) {
         $("#output").text("Please enter a value in all fields.");
       }  else if (partysize + traveltime + budget <= 2009) {
-        $("#output").text(name + " Pack the bugspray and check out these popular backpacking destinations! https://www.studentuniverse.com/travel-guides/top-lists/top-10-cheapest-countries-to-backpack-through");
+        $("#output").text(name + " pack the bugspray and check out these popular backpacking destinations!")
       }  else if (partysize + traveltime + budget < 4000 && partysize + traveltime + budget >= 2010) {
-        $("#output").text(name + " hotel");
+        $("#output").text(name + " airbnb");
       }  else if (partysize + traveltime + budget >= 4001) {
         $("#output").text(name + " cruise")
       }
