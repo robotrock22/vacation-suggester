@@ -10,7 +10,7 @@ This is a simple from that asks the user questions about predetermined parameter
 
 ## Setup/Installation Requirements
 
-* Clone this repository.
+* Clone this repository. https://github.com/robotrock22/vacation-suggester
 * Launch index.html file in a web browser
 * Input answers into required fields
 * Click submit button
