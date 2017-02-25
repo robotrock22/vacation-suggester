@@ -1,6 +1,3 @@
-// $(function(){
-//   $("select").children("option:first-child").hide();
-
 $(document).ready(function() {
   $("#inputs").submit(function(event) {
     var name = $("#name").val();
@@ -11,30 +8,17 @@ $(document).ready(function() {
     // console.log("days of travel: " + traveltime);
     // console.log("budget: " + budget);
 
-    // Cruise
     if (isNaN(partysize) || isNaN(traveltime) || isNaN(budget)) {
-      $("#output").text("Please enter a value in all fields.");
-    }  else if (partysize >= 6 && traveltime >= 15 && budget >= 4,001)
-        $("#output").text(name + " bring sunscreen, you're going for a cruise!");
+        $("#output").text("Please enter a value in all fields.");
+      }  else if (partysize + traveltime + budget <= 2009) {
+        $("#output").text(name + " Pack the bugspray and check out these popular backpacking destinations! https://www.studentuniverse.com/travel-guides/top-lists/top-10-cheapest-countries-to-backpack-through");
+      }  else if (partysize + traveltime + budget < 4000 && partysize + traveltime + budget >= 2010) {
+        $("#output").text(name + " hotel");
+      }  else if (partysize + traveltime + budget >= 4001) {
+        $("#output").text(name + " cruise")
+      }
 
 
-
-
-
-    // else if ((partysize + traveltime) <= budget || (partysize + budget) <= traveltime || (traveltime + budget) <= partysize) {
-    //   $("#output").text("Congratulations you've created a straight line dummy!");
-    //   $("#dummy").show();
-    // }  else if (partysize === traveltime && partysize === budget) {
-    //   $("#output").text("Congratulations you've created an equilateral triangle!");
-    //   $("#dummy").hide();
-    // } else if (partysize === traveltime || partysize === budget || traveltime === budget) {
-    //   $("#output").text("Congratulations you've created an isosceles triangle!");
-    //   $("#dummy").hide();
-    // } else if (partysize !== traveltime && partysize !== budget && traveltime !== budget) {
-    //   $("#output").text("Congratulations you've created a scalene triangle!");
-    //   $("#dummy").hide();
-    // }
-
-  event.preventDefault();
+    event.preventDefault();
+   });
   });
-});
