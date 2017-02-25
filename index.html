@@ -17,13 +17,13 @@
       <form id="inputs">
         <div class="row">
           <div class="col-xs-6">
-            <div class="form-group blank">
+            <div class="form-group">
               <label for="name">First tell us your name.</label>
               <input class="form-control" id="name" type="text" placeholder="Enter name here">
             </div>
           </div>
           <div class="col-xs-6">
-            <div class="form-group blank">
+            <div class="form-group">
               <label for="partysize">How many people will be in your party.</label>
               <input class="form-control" id="partysize" type="text" placeholder="Enter answer here">
             </div>
@@ -31,62 +31,66 @@
         </div>
         <div class="row">
           <div class="col-xs-6">
-            <div class="form-group blank">
+            <div class="form-group">
               <label for="traveltime">How many days would you like to travel for?</label>
               <input class="form-control" id="traveltime" type="text"  placeholder="Enter answer here">
             </div>
           </div>
           <div class="col-xs-6">
-            <div class="form-group blank">
+            <div class="form-group">
               <label for="budget">What is your budget for this trip?</label>
               <input class="form-control" id="budget" type="text"  placeholder="$">
             </div>
           </div>
         </div>
-          <div class="form-group blank">
-            <label for="q4">What kind of climate do you find most enjoyable?</label>
-              <ul type="A">
-                <li>
-                  <input type="radio" name="climate">
-                  Temperate: Temperate climates have warm summers and cool winters with year-round rain or snow. Temperate forests are characterized by deciduous trees, which lose their leaves during the winter.
-                </li>
-                <li>
-                  <input type="radio" name="climate">
-                  Mountain: On mountains, the temperature decreases with altitude (height), and many high peaks are always covered in snow. Mountain climates are usually wetter and windier than lowland regions.
-                </li>
-                <li>
-                  <input type="radio" name="climate">
-                  Polar: Polar climates are cold and dry, with long, dark winters. In the tundra (a treeless region bordering the Arctic), temperatures rise above freezing for only a few months each year.
-                </li>
-                <li>
-                  <input type="radio" name="climate">
-                  Tropical: Tropical areas, such as the African savanna, lie between desert areas and tropical rainforests. The climate is hot all year, but with a distinct wet season and dry season.
-                </li>
-                <li>
-                  <input type="radio" name="climate">
-                  Desert: Earth's deserts are hot and dry year-round, and usually receive less than 10 in (250 mm) of rainfall a year. Deserts are often found in the center of continents, far from the sea.
-                </li>
-              </ul>
-          </div>
-          <div class="form-group blank">
-            <label for="q5">What type of housing are you looking for?</label>
-              <ul type="A">
-                <li>
-                  <input type="radio" name="housing">
-                  Minimal: You don't plan on being in your room much.
-                </li>
-                <li>
-                  <input type="radio" name="housing">
-                  Comfortable: You enjoy spending time in a room with modern amenities when traveling.
-                </li>
-                <li>
-                  <input type="radio" name="housing">
-                  Luxury: Privacy is important to you and you will be spending a large portion of your vacation relaxing in your room.
-                </li>
-              </ul>
-          </div>
+        <div class="jumbotron">
+        <div class="form-group">
+          <label for="q4">What kind of climate do you find most enjoyable?</label>
+            <ul type="A">
+              <li>
+                <input type="radio" name="climate">
+                Temperate: Temperate climates have warm summers and cool winters with year-round rain or snow. Temperate forests are characterized by deciduous trees, which lose their leaves during the winter.
+              </li>
+              <li>
+                <input type="radio" name="climate">
+                Mountain: On mountains, the temperature decreases with altitude (height), and many high peaks are always covered in snow. Mountain climates are usually wetter and windier than lowland regions.
+              </li>
+              <li>
+                <input type="radio" name="climate">
+                Polar: Polar climates are cold and dry, with long, dark winters. In the tundra (a treeless region bordering the Arctic), temperatures rise above freezing for only a few months each year.
+              </li>
+              <li>
+                <input type="radio" name="climate">
+                Tropical: Tropical areas, such as the African savanna, lie between desert areas and tropical rainforests. The climate is hot all year, but with a distinct wet season and dry season.
+              </li>
+              <li>
+                <input type="radio" name="climate">
+                Desert: Earth's deserts are hot and dry year-round, and usually receive less than 10 in (250 mm) of rainfall a year. Deserts are often found in the center of continents, far from the sea.
+              </li>
+            </ul>
+        </div>
+        <div class="form-group">
+          <label for="q5">What type of housing are you looking for?</label>
+            <ul type="A">
+              <li>
+                <input type="radio" name="housing">
+                Minimal: You don't plan on being in your room much.
+              </li>
+              <li>
+                <input type="radio" name="housing">
+                Comfortable: You enjoy spending time in a room with modern amenities when traveling.
+              </li>
+              <li>
+                <input type="radio" name="housing">
+                Luxury: Privacy is important to you and you will be spending a large portion of your vacation relaxing in your room.
+              </li>
+            </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
           <div class="form-group">
-            <label for="q6">Out of the activities below, which are you most likely to participate in?</label>
+            <label for="q6">Which activity sounds most appealing?</label>
               <select class="form-control" id="activities">
                 <option>Pick One</option>
                 <option>Hiking</option>
@@ -97,22 +101,45 @@
                 <option>Eating</option>
                 <option>Relaxing</option>
               </select>
+            </div>
           </div>
-          <div class="form-group blank">
-            <label for="q7">What type of night time activity sounds most appealing?</label>
-            <input type="text" class="form-control" placeholder="Enter answer here">
+          <div class="col-xs-6">
+            <div class="form-group blank">
+              <label for="q7">What night time activity sounds most appealing?</label>
+              <input type="text" class="form-control" placeholder="Enter answer here">
+            </div>
           </div>
+        </div>
+        <div class="buttonholder">
           <button type="submit" class="btn btn-success">Go Travel!</button>
-        </form>
+        </div>
+      </form>
+    </div>
+    <div id="output">
+    </div>
+    <div class="containeroutput">
+      <div class="row">
+        <div class="col-xs-4">
+          <a href="https://www.studentuniverse.com/travel-guides/top-lists/top-10-cheapest-countries-to-backpack-through"><img src=img/backpacker.jpg id="backpacker"></a>
+        </div>
+        <div class="col-xs-4">
+          <a href="https://www.airbnb.com/"><img src="img/airbnb.jpg" id="airbnb"></a>
+        </div>
+        <div class="col-xs-4">
+          <a href="https://www.carnival.com/"><img src="img/cruiseship.jpg" id="cruiseship"></a>
+        </div>
       </div>
-      <div id="output">
+    </div>
+    <div class="row">
+      <div class="col-xs-4" id="backpackerdescript">
+        <p><strong>Backpacking</strong> is an outdoor recreation where gear is carried in a backpack. This can include food, water, bedding, shelter, clothing, stove, and cooking kit. Weight is necessarily key. Backpacking trips consist of at least one night and can last for weeks or months, sometimes aided by planned resupply points or drops.</p>
       </div>
-      <a href="https://www.studentuniverse.com/travel-guides/top-lists/top-10-cheapest-countries-to-backpack-through">
-      <img src=img/backpacker.jpg id="backpacker"></a>
-      <a href="https://www.airbnb.com/">
-      <img src="img/airbnb.jpg" id="airbnb"></a>
-      <a href="https://www.carnival.com/">
-      <img src="img/cruiseship.jpg" id="cruiseship"></a>
+      <div class="col-xs-4" id="airbnbdescript">
+        <p><strong>Airbnb</strong> is an online marketplace and hospitality service, enabling people to list or rent short-term lodging including vacation rentals, apartment rentals, homestays, hostel beds, or hotel rooms. The company does not own any lodging; it is merely a broker and receives percentage service fees (commissions) from both guests and hosts in conjunction with every booking. It has over 3,000,000 lodging listings in 65,000 cities and 191 countries, and the cost of lodging is set by the host. Like all hospitality services, Airbnb is a form of collaborative consumption and sharing.</p>
+      </div>
+      <div class="col-xs-4" id="cruisedescript">
+        <p><strong>A</strong> cruise ship or cruise liner is a passenger ship used for pleasure voyages, where the voyage itself and the ship's amenities are a part of the experience, as well as the different destinations, i.e., ports of call, along the way. Transportation is not the only purpose of cruising, particularly on cruises that return passengers to their originating port, with the ports of call usually in a specified region of a continent. There are even "cruises to nowhere" or "nowhere voyages" where the ship makes 2–3 night round trips without any ports of call.</p>
+      </div>
     </div>
   </body>
 </html>
