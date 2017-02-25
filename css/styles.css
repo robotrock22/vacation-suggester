@@ -4,16 +4,25 @@
 }
 
 #backpacker {
-  width: 400px;
-  height: 80px:
+  margin: auto;
+  display: none;
+  width: 800px;
+  height: 500px;
 }
 
 #airbnb {
-  width: 400px;
-  height: 266.5px;
+  display: none;
+  width: 800px;
+  height: 533px;
 }
 
 #cruiseship {
-  width: 400px;
-  height: 266.5px
+  display: none;
+  width: 800px;
+  height: 533px
+}
+
+#inputs {
+  margin-left: 10%;
+  margin-right: 10%;
 }

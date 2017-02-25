@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $("#inputs").submit(function(event) {
+    
     var name = $("#name").val();
     var partysize = parseInt($("#partysize").val());
     var traveltime = parseInt($("#traveltime").val());
@@ -12,13 +13,20 @@ $(document).ready(function() {
         $("#output").text("Please enter a value in all fields.");
       }  else if (partysize + traveltime + budget <= 2009) {
         $("#output").text(name + " pack the bugspray and check out these popular backpacking destinations!")
+        $("#backpacker").show();
+        $("#airbnb").hide();
+        $("#cruiseship").hide();
       }  else if (partysize + traveltime + budget < 4000 && partysize + traveltime + budget >= 2010) {
-        $("#output").text(name + " airbnb");
+        $("#output").text(name + " , looks like you'd enjoy getting out and exploring a new city!");
+        $("#backpacker").hide();
+        $("#airbnb").show();
+        $("#cruiseship").hide();
       }  else if (partysize + traveltime + budget >= 4001) {
-        $("#output").text(name + " cruise")
+        $("#output").text(name + " , sit back and relax while enjoying a relaxing cruise to a new destination.")
+        $("#backpacker").hide();
+        $("#airbnb").hide();
+        $("#cruiseship").show();
       }
-
-
     event.preventDefault();
    });
   });
